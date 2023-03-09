@@ -105,7 +105,7 @@
                                 <h3 class="uk-card-title">
                                     Ольга Глущик
                                 </h3>
-                                Заместитель Председатель
+                                Заместитель председателя
                             </div>
                             <div class="uk-flex uk-flex-center" style="padding-top: 10px;">
                                 <a href="https://vk.com/xlebnaya_koshka"><img class="uk-margin-right" src="popcorn/vk.svg" style="background: #0173d9; border-radius: 25px;"/></a>
