@@ -10,6 +10,8 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "@hotwired/turbo": "github:hotwired/turbo",
+        "turbolinks": "^5.2.0",
         "uikit": "^3.16.3"
     }
 }

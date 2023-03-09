@@ -11,10 +11,13 @@
           as="image"
           type="image/svg+xml" />
     <link rel="icon" type="image/x-icon" href="popcorn/logo.ico">
+    @livewireStyles
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body>
     @include('layouts.navbar')
-    @yield('content')
+    {{$slot}}
+    @livewireScripts
+    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
 </body>
 </html>

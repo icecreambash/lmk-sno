@@ -40,11 +40,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="uk-navbar-right">
-                <a class="uk-navbar-toggle" href="#" uk-toggle="target: #sidenav">
+            <div class="uk-navbar-right uk-hidden@s">
+                <a class="uk-navbar-toggle " href="#" uk-toggle="target: #sidenav">
                     <span class="uk-icon uk-margin-small-right" uk-navbar-toggle-icon></span>
                     Меню
                 </a>
+            </div>
+            <div class="uk-navbar-right uk-visible@s">
+                <ul class="uk-navbar-nav">
+                    <li class="@if(Route::is('index')) uk-active @endif"><a href="{{Route('index')}}">Главная</a></li>
+                    <li class="@if(Route::is('news')) uk-active @endif"><a href="{{Route('news')}}">Новости</a></li>
+                    <li><a href="#"><button class="uk-button uk-button-default button-property" uk-toggle="target: #modal-call">Вступить в сообщество</button></a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -54,9 +61,8 @@
 <div id="sidenav" uk-offcanvas="flip: true; mode: push;" class="uk-offcanvas">
     <div class="uk-offcanvas-bar uk-flex uk-flex-column mobile__navbar__canvas">
         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-{{--            <li class="uk-nav-header">Навигация</li>--}}
-            <li class="uk-active"><a href="#">Главная</a></li>
-            <li class="uk-parent"><a href="#">Новости</a></li>
+            <li class="@if(Route::is('index')) uk-active @endif"><a href="{{Route('index')}}">Главная</a></li>
+            <li class="@if(Route::is('news')) uk-active @endif"><a href="{{Route('news')}}">Новости</a></li>
             <li class="uk-parent"><a href="#">О нас</a></li>
             <li class="uk-nav-divider"></li>
             <li><a href="#"><button class="uk-button uk-button-default button-property-mobile" uk-toggle="target: #modal-call">Вступить в сообщество</button></a></li>

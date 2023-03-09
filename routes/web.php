@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', \App\Http\Livewire\Main::class)->name('index');
+
+Route::get('/news',\App\Http\Livewire\NewsPage::class)->name('news');
