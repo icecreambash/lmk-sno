@@ -15,8 +15,14 @@
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body>
-    @include('layouts.navbar')
-    {{$slot}}
+    <div id="content" hidden>
+        @include('layouts.navbar')
+        {{$slot}}
+    </div>
+    <div class="uk-position-center">
+        <span id="preloader" uk-spinner="ratio: 4.5"></span>
+    </div>
     @livewireScripts
 </body>
+
 </html>

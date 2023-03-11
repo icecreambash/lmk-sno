@@ -7,10 +7,12 @@
 import axios from 'axios';
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons.min';
+import jQuery from 'jquery';
 
 window.axios = axios;
 window.UIkit = UIkit;
 window.Icons = Icons;
+window.$ = jQuery;
 
 
 

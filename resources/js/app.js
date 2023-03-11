@@ -1,5 +1,10 @@
 import './bootstrap';
 
-// import Turbolinks from 'turbolinks';
-//
-// Turbolinks.start();
+
+
+$(document).ready(function() {
+    setTimeout(function (){
+        $('#preloader').attr('hidden','hidden');
+        $('#content').removeAttr('hidden');
+    },500)
+});

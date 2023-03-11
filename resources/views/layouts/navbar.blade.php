@@ -1,24 +1,3 @@
-{{--<nav class="uk-navbar-container navbar__container__sub">--}}
-{{--    <div class="uk-container">--}}
-{{--        <div uk-navbar="align: center">--}}
-{{--            <div class="uk-navbar-center">--}}
-{{--                <ul class="uk-navbar-nav uk-dark navbar_sub__items">--}}
-{{--                    <li>--}}
-{{--                        <a href="#">Новости</a>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <a href="#">Наша миссия</a>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <a href="#">О нас</a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-
-{{--            </div>--}}
-
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</nav>--}}
 <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
 <nav class="uk-navbar-container navbar__container">
     <div class="uk-container">
